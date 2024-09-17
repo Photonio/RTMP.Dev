@@ -1,0 +1,4 @@
+- hosts: desktop #localhost
+  roles:
+    - ansible-role-RTMP-Desktop-dev
+
