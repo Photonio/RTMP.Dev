@@ -4,10 +4,10 @@ roles:
 # Desktop
 - UniInc.Youtube-dl
 - UniInc.Gnome-Favorite-Apps
-- src: git@github.com:Unicorn-OS/ansible-role-Screen-Resolution.git
-- src: git@github.com:Photonio/ansible-role-RTMP-Desktop-dev.git
-- src: git@github.com:Photonio/ansible-role-Nginx-Restreamer-OBS-Studio-template.git
+- src: https://github.com/Unicorn-OS/ansible-role-Screen-Resolution.git
+- src: https://github.com/Photonio/ansible-role-RTMP-Desktop-dev.git
+- src: https://github.com/Photonio/ansible-role-Nginx-Restreamer-OBS-Studio-template.git
 # Server
-- src: git@github.com:WebPlatformAI/ansible-role-Nginx.git
-- src: git@github.com:WebPlatformAI/ansible-role-Nginx-RTMP-module.git
-- src: git@github.com:WebPlatformAI/ansible-role-Nginx-RTMP-template.git
+- src: https://github.com/WebPlatformAI/ansible-role-Nginx.git
+- src: https://github.com/WebPlatformAI/ansible-role-Nginx-RTMP-module.git
+- src: https://github.com/WebPlatformAI/ansible-role-Nginx-RTMP-template.git
