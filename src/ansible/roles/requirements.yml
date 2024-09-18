@@ -2,5 +2,6 @@
 roles:
 - UniInc.Psutil
 - UniInc.Youtube-dl
+- UniInc.Gnome-Favorite-Apps
 #- UniInc.Docker
 #- UniInc.Podman
