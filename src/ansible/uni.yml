@@ -6,10 +6,6 @@
   - UniInc.devEnv-RTMP-Desktop
   - UniInc.Screen-Resolution
   - UniInc.template-Nginx-Restreamer-OBS-Studio
-
-  tasks:
-  - ansible.builtin.debug:
-      msg: "{{ ansible_default_ipv4.address }}"
   
 
 - hosts: server
