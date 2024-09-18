@@ -1,13 +1,21 @@
-# - hosts: desktop #localhost
+- hosts: desktop #localhost
 #   roles:
 #   - ansible-role-RTMP-Desktop-dev
 #   - ansible-role-Screen-Resolution
 
+  tasks:
+  - ansible.builtin.debug:
+      msg: "{{ ansible_default_ipv4.address }}"
+  
+
 - hosts: server
-  vars:
-    nginx_source: default
-    nginx_rtmp_module_source: default
-  roles:
-  - ansible-role-Nginx
-  - ansible-role-Nginx-RTMP-module
-  - ansible-role-Nginx-RTMP-template
+  vars_files:
+    - vars/source.yml
+  # roles:
+  # - ansible-role-Nginx
+  # - ansible-role-Nginx-RTMP-module
+  # - ansible-role-Nginx-RTMP-template
+  tasks:  
+  - debug:
+      msg: "Default IP: {{ hostvars[item]['ansible_default_ipv4']['address'] }}"
+    with_items: "{{ groups['desktop'][0] }}"
