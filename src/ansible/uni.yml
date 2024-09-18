@@ -3,9 +3,9 @@
 
 - hosts: desktop #localhost
   roles:
-  - ansible-role-RTMP-Desktop-dev
-  - ansible-role-Screen-Resolution
-  - ansible-role-Nginx-Restreamer-OBS-Studio-template
+  - UniInc.devEnv-RTMP-Desktop
+  - UniInc.Screen-Resolution
+  - UniInc.template-Nginx-Restreamer-OBS-Studio
 
   tasks:
   - ansible.builtin.debug:
@@ -16,6 +16,6 @@
   vars_files:
     - vars/source.yml
   roles:
-  - ansible-role-Nginx
-  - ansible-role-Nginx-RTMP-module
-  - ansible-role-Nginx-RTMP-template
+  - UniInc.Nginx
+  - UniInc.Nginx-RTMP-module
+  - UniInc.template-Nginx-RTMP
