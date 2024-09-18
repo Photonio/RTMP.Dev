@@ -1,2 +1,5 @@
 ansible-role-RTMP-Desktop-dev
 ansible-role-Screen-Resolution
+ansible-role-Nginx
+ansible-role-Nginx-RTMP-module
+ansible-role-Nginx-RTMP-template

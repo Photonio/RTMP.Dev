@@ -1,6 +1,13 @@
-- hosts: desktop #localhost
-  roles:
-  - ansible-role-RTMP-Desktop-dev
-  #- UniInc.Gnome-Favorite-Apps
-  #- ansible-role-Screen-Resolution
+# - hosts: desktop #localhost
+#   roles:
+#   - ansible-role-RTMP-Desktop-dev
+#   - ansible-role-Screen-Resolution
 
+- hosts: server
+  vars:
+    nginx_source: default
+    nginx_rtmp_module_source: default
+  roles:
+  - ansible-role-Nginx
+  - ansible-role-Nginx-RTMP-module
+  - ansible-role-Nginx-RTMP-template
