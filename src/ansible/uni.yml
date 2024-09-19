@@ -15,3 +15,4 @@
   - UniInc.Nginx
   - UniInc.Nginx-RTMP-module
   - UniInc.template-Nginx-RTMP
+  - UniInc.Netplan-ethernet-interface
